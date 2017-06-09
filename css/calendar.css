@@ -1,0 +1,177 @@
+/*text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF*/
+
+body{
+  font-family: "PT Sans", sans-serif;
+}
+
+header{
+  display: inline-grid;
+  grid-template-columns: 120px auto;
+  width: 100%;
+  background-color: #F5005B;
+}
+
+#logo{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo img{
+  width: 85px;
+  height: 95px;
+  padding: 10px;
+}
+
+nav{
+  text-align: center;
+  margin-left: inherit;
+  font-size: 10pt;
+  background-color: #7DDFE8;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+  background-color: #7DDFE8;
+}
+
+.home-item{
+  background-color: #00A5BF;
+}
+
+.calendar-item{
+  background-color: #00B7D3;
+}
+
+.join-item{
+  background-color: #00D5E7;
+}
+
+#home-top{
+  color: #0B1942;
+}
+
+#title-top{
+  color: #0B1942;
+  font-weight: normal;
+  padding: 0 0 0 25px;
+}
+
+/*=========CALENDAR=========*/
+#home-bottom{
+  background-color: #0B1942;
+  color: white;
+}
+
+#month{
+  font-weight: normal;
+  padding: 25px;
+  margin: 0;
+}
+
+#calendar{
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 35px;
+}
+
+.day{
+  background-color: white;
+  height: calc(100vw / 8);
+  width: 13.85%;
+  margin: .25%;
+}
+
+.day:nth-child(7n){
+  margin-right: 0;
+}
+
+.day:nth-child(7n+1){
+  margin-left: 0;
+}
+
+.date{
+  background-color: #0B1942;
+  color: white;
+  padding: 5px;
+  height: 15px;
+  width: 15px;
+}
+
+#first-movie, #second-movie{
+  background-color: #F5005B;
+}
+
+/*=========CALENDAR=========*/
+
+footer{
+  color: #FFFFFF;
+  background-color: #7DDFE8;
+  margin: 0;
+  text-align: center;
+  margin-left: inherit;
+  font-size: 10pt;
+  padding: 30px;
+}
+
+/*============TABLET STYLE============*/
+@media screen and ( min-width: 545px ){
+  nav ul{
+    overflow: visible;
+  }
+
+  nav li{
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+  }
+
+  nav li a{
+    padding: 49px 0px 49px 0px;
+    width: 120px;
+    font-size: 14pt;
+  }
+
+  footer{
+    height: 59px;
+    text-align: right;
+  }
+
+  footer div{
+    transform: translate(2%,150%);
+  }
+}
+
+
+
+/*===============DESKTOP STYLE=============*/
